@@ -43,8 +43,6 @@ return require('packer').startup(function(use)
 
   use("mbbill/undotree")
 
-  use("lervag/vimtex")
-
   use("github/copilot.vim")
 
   use("tpope/vim-fugitive")
