@@ -11,3 +11,5 @@ vim.opt.wrap = true
 vim.opt.smartindent = true
 
 vim.t_co = "256"
+
+vim.opt.scrolloff = 8
