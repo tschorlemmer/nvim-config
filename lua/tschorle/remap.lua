@@ -21,9 +21,9 @@ vim.keymap.set("n", "<leader>q", ":q<CR>")
 vim.keymap.set("n", "<leader>w", ":w<CR>")
 vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>a")
 
+
 vim.keymap.set("n", "<C-J>", "<C-w>j")
 vim.keymap.set("n", "<C-K>", "<C-w>k")
 vim.keymap.set("n", "<C-H>", "<C-w>h")
 vim.keymap.set("n", "<C-L>", "<C-w>l")
-
 
