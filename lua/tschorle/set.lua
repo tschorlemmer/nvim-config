@@ -8,7 +8,7 @@ vim.opt.softtabstop = 4
 
 vim.opt.wrap = true
 
-vim.opt.smartindent = true
+--vim.opt.smartindent = true
 
 vim.t_co = "256"
 
