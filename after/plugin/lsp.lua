@@ -36,26 +36,20 @@ else
 end
 
 
-
-
 lsp.setup()
-
 
 local cmp = require('cmp')
 
-local cmp_select = { behavior = cmp.SelectBehavior.Select }
-local cmp_mappings = lsp.defaults.cmp_mappings({
-    ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-    ['ll'] = cmp.mapping.confirm({ select = true }),
-    ['<CR>'] = cmp.mapping.confirm({ select = false}),
-})
-
-cmp_mappings['<Tab>'] = nil
-cmp_mappings['<S-Tab>'] = nil
-cmp_mappings['<C-y>'] = nil
-
 cmp.setup({
-    mapping = cmp_mappings
+  sources = {
+    {name = 'nvim_lsp'}
+  },
+  mapping = cmp.mapping.preset.insert({
+    ['ll'] = cmp.mapping.confirm({ select = false }),
+  }),
+  snippet = {
+    expand = function(args)
+      require('luasnip').lsp_expand(args.body)
+    end,
+  },
 })
-
