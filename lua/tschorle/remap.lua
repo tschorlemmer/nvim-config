@@ -17,8 +17,6 @@ vim.keymap.set("n", "<leader>k", "O<Esc>")
 
 vim.keymap.set("t", "jj", "<C-\\><C-n>")
 
-vim.keymap.set("n", "<leader>q", ":q<CR>")
-vim.keymap.set("n", "<leader>w", ":w<CR>")
 vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>a")
 
 
