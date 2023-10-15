@@ -17,3 +17,5 @@ vim.opt.scrolloff = 8
 vim.opt.ff = "unix"
 
 vim.opt.colorcolumn = "80"
+
+vim.opt.smartcase = true
