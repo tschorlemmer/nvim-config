@@ -18,4 +18,5 @@ vim.opt.ff = "unix"
 
 vim.opt.colorcolumn = "80"
 
+vim.opt.ignorecase = true
 vim.opt.smartcase = true
